@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Models.StudentContext;
+using Models;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
