@@ -1,14 +1,34 @@
 # 2024 Phase 2 - Data Science
 
-**TODO** 
+## TODO:
+Make a new branch and work on that if you are working on the repo. That way, we can track who's on what. One rule is that when you create a PR, make sure someone else merges it.
 
-For this page:
-- Update the links after all the modules are set up and polished
+**Xiaoyu**
+
+- You will be working on task 2. Have a read at task 1. I read it and I think most (or even everything) can stay as is
+- The readmes for the new metrics and the regression dataset should go in `0. Resources`
+
+**Shuo Feng**
+
+- You need to get the reading material ready for 3. Deep Learning. Before you do that, make sure to communicate with @Jason and @Jingrui on what metric we will be using to evaluate the models for CIFAR-10 (also submission and the details)
+
+**Jason**
+
+- You will need to create the competition for task 3. This will involve uploading the CIFAR-10 dataset and setting up the competition readmes on Kaggle
+
+**Jingrui**
+
+- You will need to make the skeleton notebook for the competition on Kaggle. Have a look at `3. Deep Learning` for a dummy notebook that we used last year
+
+The tasks shouldn't be too hard (except for maybe, Xiaoyu and Shuo Feng). Please let me know if you need help or if you have any questions!
+
+
+## For this page:
+- @Sadat - Update the links and READMEs after all the modules are set up and polished
 - @Xiaoyu - Update the Getting Started part
 - @ShuoFeng - Update the Deep Learning section at the end of this readme
 
---x--
-
+## Start
 This year, Phase 2 of the Data Science stream has been split into three parts:
 
 1. [Analysis and Preprocessing](https://github.com/NZMSA/2024-Phase-2/tree/main/data-science/1.%20Analysis%20and%20Preprocessing)
