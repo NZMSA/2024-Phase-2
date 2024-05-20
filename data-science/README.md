@@ -10,9 +10,9 @@ Make a new branch and work on that if you are working on the repo. That way, we 
 
 **Shuo Feng**
 
-- You need to get the reading material ready for 3. Deep Learning. Before you do that, make sure to communicate with @Jason and @Jingrui on what metric we will be using to evaluate the models for CIFAR-10 (also submission and the details)
+- You need to get the reading material ready for 3. Deep Learning. Before you do that, make sure to communicate with @Bill and @Jingrui on what metric we will be using to evaluate the models for CIFAR-10 (also submission and the details)
 
-**Jason**
+**Bill**
 
 - You will need to create the competition for task 3. This will involve uploading the CIFAR-10 dataset and setting up the competition readmes on Kaggle
 
