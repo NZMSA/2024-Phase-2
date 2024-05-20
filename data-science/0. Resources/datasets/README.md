@@ -1,3 +1,5 @@
+**Note:** This is from last year's. Since we will be using kaggle, this need to updated only for the regression dataset @Xiaoyu
+
 # Datasets
 
 Choose *one* dataset as your chosen classification dataset and *one* dataset as your chosen regression dataset from the list below.
