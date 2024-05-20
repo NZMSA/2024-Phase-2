@@ -1,15 +1,24 @@
-# 2023 Phase 2 - Data Science
+# 2024 Phase 2 - Data Science
+
+**TODO** 
+
+For this page:
+- Update the links after all the modules are set up and polished
+- @Xiaoyu - Update the Getting Started part
+- @ShuoFeng - Update the Deep Learning section at the end of this readme
+
+--x--
 
 This year, Phase 2 of the Data Science stream has been split into three parts:
 
-1. [Analysis and Preprocessing](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/1.%20Analysis%20and%20Preprocessing)
-2. [Training and Evaluation](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/2.%20Training%20and%20Evaluation)
-3. [Microsoft Azure](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/3.%20Microsoft%20Azure)
+1. [Analysis and Preprocessing](https://github.com/NZMSA/2024-Phase-2/tree/main/data-science/1.%20Analysis%20and%20Preprocessing)
+2. [Training and Evaluation](https://github.com/NZMSA/2024-Phase-2/tree/main/data-science/2.%20Training%20and%20Evaluation)
+3. [Deep Learning](https://github.com/NZMSA/2024-Phase-2/tree/ds/initial-setup/data-science/3.%20Deep%20Learning)
 
 ## Getting Started
 
 To get started with Phase 2 of the Data Science stream:
-1. Go to the README in the [Resources folder](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/0.%20Resources) and choose **two** datasets (one for classification, one for regression) - you will use these two datasets for all three parts.
+1. Go to the README in the [Resources folder](https://github.com/NZMSA/2024-Phase-2/tree/main/data-science/0.%20Resources) and @Xiaoyu ~~choose **two** datasets (one for classification, one for regression) - you will use these two datasets for all three parts.~~ 
 2. Create and activate a virtual environment to use for all three parts using the provided `requirements.txt` file with the following recommended packages:
     - Numpy and Pandas: data manipulation and processing
     - Matplotlib and Seaborn: plotting and visualisation
@@ -35,7 +44,7 @@ To get started with Phase 2 of the Data Science stream:
 
 - The bonus tasks are your time to shine and show us what you have learned, so create something you can be proud of and include in your portfolio! Don't worry if you can't get to these though, keep in mind that we're marking students across a wide range of years, degrees, and skill levels, so we'll take your personal circumstances into consideration!
 
-- There are many good notebooks in [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) such as [this one](https://www.kaggle.com/code/odins0n/spaceship-titanic-eda-27-different-models) that you can take *inspiration* from. You can do this by selecting one of the datasets in the first link above, going to Code, then going through the most voted notebooks. You can learn a lot by reading these notebooks and get a sense of what a good notebook looks like.
+- There are many good notebooks in [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) such as [this one](https://www.kaggle.com/code/odins0n/spaceship-titanic-eda-27-different-models) that you can take inspiration from. You can do this by selecting one of the datasets in the first link above, going to Code, then going through the most voted notebooks. You can learn a lot by reading these notebooks and get a sense of what a good notebook looks like.
 
 - Have a look at [this past submission](https://github.com/NZMSA/2020-Phase-1/blob/master/Data%20Science%20and%20Machine%20Learning/SampleReport.pdf) to see what you could write about in your notebooks and how to write about it.
 
@@ -52,5 +61,6 @@ To get started with Phase 2 of the Data Science stream:
         - [Video 5 - second half](https://www.youtube.com/watch?v=dvZxu2PjOW8)
     - Training and Evaluation
         - [Video 1 - second two thirds](https://www.youtube.com/watch?v=K_EFlXDMkvA)
-    - Microsoft Azure
-        - [Video 1](https://www.youtube.com/watch?v=XVhQNmMFaHQ)
+    - Deep Learning @ShuoFeng
+    - ~~Microsoft Azure~~
+        - ~~[Video 1](https://www.youtube.com/watch?v=XVhQNmMFaHQ)~~
