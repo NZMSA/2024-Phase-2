@@ -1,11 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models;
+using Repositories;
 
 namespace backend.Controllers
 {
@@ -13,36 +9,36 @@ namespace backend.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
-        private readonly StudentContext _context;
+        private readonly IStudentRepository _repository;
 
-        public StudentsController(StudentContext context)
+        public StudentsController(IStudentRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
         // GET: api/Students
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Student>>> GetStudent()
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
-            return await _context.Student.ToListAsync();
+            var students = await _repository.GetAllStudentsAsync();
+            return Ok(students);
         }
 
         // GET: api/Students/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(long id)
         {
-            var student = await _context.Student.FindAsync(id);
+            var student = await _repository.GetStudentByIdAsync(id);
 
             if (student == null)
             {
                 return NotFound();
             }
 
-            return student;
+            return Ok(student);
         }
 
         // PUT: api/Students/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStudent(long id, Student student)
         {
@@ -51,15 +47,13 @@ namespace backend.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(student).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                await _repository.UpdateStudentAsync(student);
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StudentExists(id))
+                if (!await _repository.StudentExistsAsync(id))
                 {
                     return NotFound();
                 }
@@ -73,13 +67,10 @@ namespace backend.Controllers
         }
 
         // POST: api/Students
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {
-            _context.Student.Add(student);
-            await _context.SaveChangesAsync();
-
+            await _repository.AddStudentAsync(student);
             return CreatedAtAction("GetStudent", new { id = student.Id }, student);
         }
 
@@ -87,21 +78,15 @@ namespace backend.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteStudent(long id)
         {
-            var student = await _context.Student.FindAsync(id);
+            var student = await _repository.GetStudentByIdAsync(id);
             if (student == null)
             {
                 return NotFound();
             }
 
-            _context.Student.Remove(student);
-            await _context.SaveChangesAsync();
+            await _repository.DeleteStudentAsync(id);
 
             return NoContent();
-        }
-
-        private bool StudentExists(long id)
-        {
-            return _context.Student.Any(e => e.Id == id);
         }
     }
 }
