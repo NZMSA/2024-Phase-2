@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import StudentList from "./Components/StudentList";
+import AddStudentForm from "./Components/AddStudentForm";
+import { CssBaseline, Container, Typography, Button } from "@mui/material";
+import { useStudents } from "./Hooks/useStudents";
+import { Student } from "./Models/Students";
 
-function App() {
+const App: React.FC = () => {
+  const { students, loading, error, addStudent } = useStudents();
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const handleAddStudent = (student: Omit<Student, "id">) => {
+    addStudent(student);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <CssBaseline />
+      <Container>
+        <Typography variant="h3" gutterBottom>
+          Student Portal
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => setIsFormOpen(true)}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Add Student
+        </Button>
+        <StudentList students={students} loading={loading} error={error} />
+        <AddStudentForm
+          open={isFormOpen}
+          onClose={() => setIsFormOpen(false)}
+          onAddStudent={handleAddStudent}
+        />
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
