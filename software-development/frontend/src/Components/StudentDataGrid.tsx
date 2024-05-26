@@ -12,12 +12,14 @@ import { updateStudent, deleteStudent } from "../Services/StudentService";
 
 interface StudentDataGridProps {
   students: Student[];
+  setStudents: React.Dispatch<React.SetStateAction<Student[]>>;
   loading: boolean;
   error: string | null;
 }
 
 const StudentDataGrid: React.FC<StudentDataGridProps> = ({
   students,
+  setStudents,
   loading,
   error,
 }) => {
@@ -31,6 +33,11 @@ const StudentDataGrid: React.FC<StudentDataGridProps> = ({
     };
     try {
       await updateStudent(newRow.id as number, updatedStudent);
+      setStudents((prev) =>
+        prev.map((student) =>
+          student.id === newRow.id ? updatedStudent : student
+        )
+      );
       return updatedStudent;
     } catch (err) {
       throw new Error("Failed to update student");
@@ -44,6 +51,7 @@ const StudentDataGrid: React.FC<StudentDataGridProps> = ({
   const handleDelete = async (id: number) => {
     try {
       await deleteStudent(id);
+      setStudents((prev) => prev.filter((student) => student.id !== id));
     } catch (err) {
       console.error("Failed to delete student:", err);
     }

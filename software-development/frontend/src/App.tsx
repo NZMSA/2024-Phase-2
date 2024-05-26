@@ -29,8 +29,8 @@ const App: React.FC = () => {
 
   const handleAddStudent = async (student: Omit<Student, "id">) => {
     try {
-      await createStudent(student);
-      fetchStudents();
+      const newStudent = await createStudent(student);
+      setStudents((prev) => [...prev, newStudent]);
       setIsFormOpen(false);
     } catch (err) {
       setError("Failed to add student");
@@ -51,7 +51,12 @@ const App: React.FC = () => {
         >
           Add Student
         </Button>
-        <StudentDataGrid students={students} loading={loading} error={error} />
+        <StudentDataGrid
+          students={students}
+          setStudents={setStudents}
+          loading={loading}
+          error={error}
+        />
         <AddStudentForm
           open={isFormOpen}
           onClose={() => setIsFormOpen(false)}
