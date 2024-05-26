@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import {
   Dialog,
-  DialogActions,
-  DialogContent,
   DialogTitle,
-  TextField,
+  DialogContent,
+  DialogActions,
   Button,
+  TextField,
 } from "@mui/material";
 import { Student } from "../Models/Students";
 
 interface AddStudentFormProps {
   open: boolean;
   onClose: () => void;
-  onAddStudent: (student: Omit<Student, "id">) => void;
+  onAddStudent: (student: Omit<Student, "id">) => Promise<void>;
 }
 
 const AddStudentForm: React.FC<AddStudentFormProps> = ({
@@ -20,60 +20,56 @@ const AddStudentForm: React.FC<AddStudentFormProps> = ({
   onClose,
   onAddStudent,
 }) => {
-  const [student, setStudent] = useState<Omit<Student, "id">>({
-    firstName: "",
-    lastName: "",
-    email: "",
-    university: "",
-  });
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [university, setUniversity] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setStudent((prevStudent) => ({
-      ...prevStudent,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = () => {
-    onAddStudent(student);
+  const handleSubmit = async () => {
+    await onAddStudent({ firstName, lastName, email, university });
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setUniversity("");
+    onClose();
   };
 
   return (
     <Dialog open={open} onClose={onClose}>
-      <DialogTitle>Add New Student</DialogTitle>
+      <DialogTitle>Add Student</DialogTitle>
       <DialogContent>
         <TextField
+          autoFocus
           margin="dense"
           label="First Name"
-          name="firstName"
+          type="text"
           fullWidth
-          value={student.firstName}
-          onChange={handleChange}
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
         />
         <TextField
           margin="dense"
           label="Last Name"
-          name="lastName"
+          type="text"
           fullWidth
-          value={student.lastName}
-          onChange={handleChange}
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
         />
         <TextField
           margin="dense"
           label="Email"
-          name="email"
+          type="email"
           fullWidth
-          value={student.email}
-          onChange={handleChange}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <TextField
           margin="dense"
           label="University"
-          name="university"
+          type="text"
           fullWidth
-          value={student.university}
-          onChange={handleChange}
+          value={university}
+          onChange={(e) => setUniversity(e.target.value)}
         />
       </DialogContent>
       <DialogActions>

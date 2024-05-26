@@ -5,8 +5,8 @@ import {
   GridActionsCellItem,
   GridRowModel,
 } from "@mui/x-data-grid";
-import { Container, Typography, CircularProgress } from "@mui/material";
-import { Delete } from "@mui/icons-material";
+import { Box, CircularProgress, Typography } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
 import { Student } from "../Models/Students";
 import { updateStudent, deleteStudent } from "../Services/StudentService";
 
@@ -79,7 +79,7 @@ const StudentDataGrid: React.FC<StudentDataGridProps> = ({
       width: 100,
       getActions: (params) => [
         <GridActionsCellItem
-          icon={<Delete />}
+          icon={<DeleteIcon style={{ color: "red" }} />}
           label="Delete"
           onClick={() => handleDelete(params.id as number)}
         />,
@@ -91,10 +91,7 @@ const StudentDataGrid: React.FC<StudentDataGridProps> = ({
   if (error) return <Typography color="error">{error}</Typography>;
 
   return (
-    <Container>
-      <Typography variant="h4" gutterBottom>
-        Student List
-      </Typography>
+    <Box mt={2}>
       <div style={{ height: 400, width: "100%" }}>
         <DataGrid
           rows={students}
@@ -105,7 +102,7 @@ const StudentDataGrid: React.FC<StudentDataGridProps> = ({
           onProcessRowUpdateError={handleProcessRowUpdateError}
         />
       </div>
-    </Container>
+    </Box>
   );
 };
 
