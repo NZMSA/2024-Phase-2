@@ -1,17 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import StudentList from "./Components/StudentList";
+import StudentDataGrid from "./Components/StudentDataGrid";
 import AddStudentForm from "./Components/AddStudentForm";
 import { CssBaseline, Container, Typography, Button } from "@mui/material";
-import { useStudents } from "./Hooks/useStudents";
+import { getStudents, createStudent } from "./Services/StudentService";
 import { Student } from "./Models/Students";
 
 const App: React.FC = () => {
-  const { students, loading, error, addStudent } = useStudents();
+  const [students, setStudents] = useState<Student[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
   const [isFormOpen, setIsFormOpen] = useState(false);
 
-  const handleAddStudent = (student: Omit<Student, "id">) => {
-    addStudent(student);
+  const fetchStudents = async () => {
+    try {
+      const students = await getStudents();
+      setStudents(students);
+    } catch (err) {
+      setError("Failed to fetch students");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchStudents();
+  }, []);
+
+  const handleAddStudent = async (student: Omit<Student, "id">) => {
+    try {
+      await createStudent(student);
+      fetchStudents();
+      setIsFormOpen(false);
+    } catch (err) {
+      setError("Failed to add student");
+    }
   };
 
   return (
@@ -28,7 +51,7 @@ const App: React.FC = () => {
         >
           Add Student
         </Button>
-        <StudentList students={students} loading={loading} error={error} />
+        <StudentDataGrid students={students} loading={loading} error={error} />
         <AddStudentForm
           open={isFormOpen}
           onClose={() => setIsFormOpen(false)}

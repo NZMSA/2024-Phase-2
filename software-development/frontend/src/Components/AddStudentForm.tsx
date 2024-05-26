@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Student } from "../Models/Students";
 import {
   Dialog,
   DialogActions,
@@ -8,6 +7,7 @@ import {
   TextField,
   Button,
 } from "@mui/material";
+import { Student } from "../Models/Students";
 
 interface AddStudentFormProps {
   open: boolean;
@@ -29,7 +29,7 @@ const AddStudentForm: React.FC<AddStudentFormProps> = ({
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setStudent((prevStudent: any) => ({
+    setStudent((prevStudent) => ({
       ...prevStudent,
       [name]: value,
     }));
@@ -37,7 +37,6 @@ const AddStudentForm: React.FC<AddStudentFormProps> = ({
 
   const handleSubmit = () => {
     onAddStudent(student);
-    onClose();
   };
 
   return (
