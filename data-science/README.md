@@ -81,6 +81,9 @@ To get started with Phase 2 of the Data Science stream:
         - [Video 5 - second half](https://www.youtube.com/watch?v=dvZxu2PjOW8)
     - Training and Evaluation
         - [Video 1 - second two thirds](https://www.youtube.com/watch?v=K_EFlXDMkvA)
-    - Deep Learning @ShuoFeng
-    - ~~Microsoft Azure~~
-        - ~~[Video 1](https://www.youtube.com/watch?v=XVhQNmMFaHQ)~~
+    - Deep Learning 
+        - [Video 1 - Neural Network](https://www.youtube.com/watch?v=aircAruvnKk&t=97s)
+        - [Video 2 - Tensorflow](https://www.youtube.com/watch?v=5Ym-dOS9ssA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb)
+        - [Video 3 - CUDA](https://www.youtube.com/watch?v=IzU4AVcMFys)
+        - [Video 4 - YOLO](https://www.youtube.com/watch?v=svn9-xV7wjk)
+
