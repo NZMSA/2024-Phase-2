@@ -7,12 +7,12 @@ import {
   Button,
   TextField,
 } from "@mui/material";
-import { Student } from "../Models/Students";
+import { Students } from "../Models/Students";
 
 interface AddStudentFormProps {
   open: boolean;
   onClose: () => void;
-  onAddStudent: (student: Omit<Student, "id">) => Promise<void>;
+  onAddStudent: (student: Omit<Students, "id">) => Promise<void>;
 }
 
 const AddStudentForm: React.FC<AddStudentFormProps> = ({

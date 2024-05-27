@@ -11,20 +11,22 @@ import {
   createTheme,
   AppBar,
   Button,
+  Container,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Sidebar from "./Components/Sidebar";
 import StudentDataGrid from "./Components/StudentDataGrid";
 import AddStudentForm from "./Components/AddStudentForm";
 import Settings from "./Components/Settings";
+import ExcelImport from "./Components/ExcelImport";
 import { getStudents, createStudent } from "./Services/StudentService";
-import { Student } from "./Models/Students";
+import { Students } from "./Models/Students";
 import { SettingsProvider, useSettings } from "./Contexts/SettingsContext";
 
 const drawerWidth = 240;
 
 const AppContent: React.FC = () => {
-  const [students, setStudents] = useState<Student[]>([]);
+  const [students, setStudents] = useState<Students[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -44,7 +46,7 @@ const AppContent: React.FC = () => {
     fetchStudents();
   }, []);
 
-  const handleAddStudent = async (student: Omit<Student, "id">) => {
+  const handleAddStudent = async (student: Omit<Students, "id">) => {
     try {
       const newStudent = await createStudent(student);
       setStudents((prev) => [...prev, newStudent]);
@@ -52,6 +54,10 @@ const AppContent: React.FC = () => {
     } catch (err) {
       setError("Failed to add student");
     }
+  };
+
+  const handleDataLoaded = (data: Students[]) => {
+    setStudents(data);
   };
 
   const { isDrawerOpen, toggleDrawer, isDarkTheme } = useSettings();
@@ -84,7 +90,7 @@ const AppContent: React.FC = () => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              MSA Student Portal
+              Student Portal
             </Typography>
           </Toolbar>
         </AppBar>
@@ -95,14 +101,13 @@ const AppContent: React.FC = () => {
             flexGrow: 1,
             p: 3,
             width: { sm: `calc(100% - ${drawerWidth}px)` },
-            marginLeft: { sm: `${drawerWidth}px` },
             transition: (theme) =>
               theme.transitions.create("margin", {
                 easing: theme.transitions.easing.sharp,
                 duration: theme.transitions.duration.leavingScreen,
               }),
             ...(isDrawerOpen && {
-              marginLeft: { sm: 0 },
+              marginLeft: 0,
               transition: (theme) =>
                 theme.transitions.create("margin", {
                   easing: theme.transitions.easing.easeOut,
@@ -112,38 +117,44 @@ const AppContent: React.FC = () => {
           }}
         >
           <Toolbar />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Typography variant="h4" gutterBottom>
-                    Student List
-                  </Typography>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={() => setIsFormOpen(true)}
-                    style={{ marginBottom: "16px" }}
-                  >
-                    Add Student
-                  </Button>
-                  <StudentDataGrid
-                    students={students}
-                    setStudents={setStudents}
-                    loading={loading}
-                    error={error}
-                  />
-                  <AddStudentForm
-                    open={isFormOpen}
-                    onClose={() => setIsFormOpen(false)}
-                    onAddStudent={handleAddStudent}
-                  />
-                </>
-              }
-            />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
+          <Container>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Box mb={2}>
+                      <Typography variant="h4" gutterBottom>
+                        Student List
+                      </Typography>
+                      <Box display="flex" gap={2} mb={2}>
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          onClick={() => setIsFormOpen(true)}
+                        >
+                          Add Student
+                        </Button>
+                        <ExcelImport onDataLoaded={handleDataLoaded} />
+                      </Box>
+                      <StudentDataGrid
+                        students={students}
+                        setStudents={setStudents}
+                        loading={loading}
+                        error={error}
+                      />
+                    </Box>
+                    <AddStudentForm
+                      open={isFormOpen}
+                      onClose={() => setIsFormOpen(false)}
+                      onAddStudent={handleAddStudent}
+                    />
+                  </>
+                }
+              />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </Container>
         </Box>
       </Box>
     </ThemeProvider>

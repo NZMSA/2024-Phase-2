@@ -1,5 +1,5 @@
 import React from "react";
-import { Student } from "../Models/Students";
+import { Students } from "../Models/Students";
 import {
   List,
   ListItem,
@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 
 interface StudentListProps {
-  students: Student[];
+  students: Students[];
   loading: boolean;
   error: string | null;
 }

@@ -1,47 +1,50 @@
-import { Student } from '../Models/Students';
+import { Students } from '../Models/Students';
+import config from '../Config';
 
-const API_URL = 'http://localhost:5006/api/Students';
+const { apiUrl } = config;
 
-export const getStudents = async (): Promise<Student[]> => {
-  const response = await fetch(API_URL);
-  if (!response.ok) {
-    throw new Error('Failed to fetch students');
-  }
-  return response.json();
+export const getStudents = async (): Promise<Students[]> => {
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+  return data;
 };
 
-export const createStudent = async (student: Omit<Student, 'id'>): Promise<Student> => {
-  const response = await fetch(API_URL, {
+export const createStudent = async (student: Omit<Students, 'id'>): Promise<Students> => {
+  const response = await fetch(apiUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(student),
   });
-  if (!response.ok) {
-    throw new Error('Failed to create student');
-  }
-  return response.json();
+  const data = await response.json();
+  return data;
 };
 
-export const updateStudent = async (id: number, student: Student): Promise<void> => {
-  const response = await fetch(`${API_URL}/${id}`, {
+export const updateStudent = async (id: number, student: Students): Promise<void> => {
+  await fetch(`${apiUrl}/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(student),
   });
-  if (!response.ok) {
-    throw new Error('Failed to update student');
-  }
 };
 
 export const deleteStudent = async (id: number): Promise<void> => {
-  const response = await fetch(`${API_URL}/${id}`, {
+  await fetch(`${apiUrl}/${id}`, {
     method: 'DELETE',
   });
-  if (!response.ok) {
-    throw new Error('Failed to delete student');
-  }
+};
+
+export const bulkCreateStudents = async (students: Omit<Students, 'id'>[]): Promise<Students[]> => {
+  const response = await fetch(`${apiUrl}/bulk`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(students),
+  });
+  const data = await response.json();
+  return data;
 };

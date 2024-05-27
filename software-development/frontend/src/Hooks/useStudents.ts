@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Student } from '../Models/Students';
+import { Students } from '../Models/Students';
 import { getStudents, createStudent } from '../Services/StudentService';
 
 export const useStudents = () => {
-    const [students, setStudents] = useState<Student[]>([]);
+    const [students, setStudents] = useState<Students[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
@@ -22,7 +22,7 @@ export const useStudents = () => {
         fetchStudents();
     }, []);
 
-    const addStudent = async (student: Omit<Student, 'id'>) => {
+    const addStudent = async (student: Omit<Students, 'id'>) => {
         try {
             const newStudent = await createStudent(student);
             setStudents([...students, newStudent]);
