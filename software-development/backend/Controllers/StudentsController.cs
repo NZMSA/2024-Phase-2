@@ -89,6 +89,7 @@ namespace backend.Controllers
             return NoContent();
         }
 
+        // POST: api/Students/bulk
         [HttpPost("bulk")]
         public async Task<ActionResult<IEnumerable<Student>>> BulkCreateStudents(IEnumerable<Student> students)
         {
@@ -97,10 +98,7 @@ namespace backend.Controllers
                 return BadRequest("Student data is required.");
             }
 
-            foreach (var student in students)
-            {
-                await _repository.AddStudentAsync(student);
-            }
+            await _repository.BulkAddStudentsAsync(students);
 
             return Ok(students);
         }

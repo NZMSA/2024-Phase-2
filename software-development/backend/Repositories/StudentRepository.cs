@@ -48,5 +48,11 @@ namespace Repositories
         {
             return await _context.Student.AnyAsync(e => e.Id == id);
         }
+
+        public async Task BulkAddStudentsAsync(IEnumerable<Student> students)
+        {
+            await _context.Student.AddRangeAsync(students);
+            await _context.SaveChangesAsync();
+        }
     }
 }
