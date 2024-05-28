@@ -18,14 +18,14 @@ Please note:
 
 ## Regression
 
-Sales forecasting is a critical component of a company's strategic planning. It aids in resource allocation, financial planning, inventory management, strategic growth, performance monitoring, risk management, and pricing strategies. The dataset provided includes sales data from various companies. Your task is to select one dataset and develop a sales prediction for it. (Sales prediction period can be in weekly or monthly)
+Sales forecasting is a critical component of a company's strategic planning. It aids in resource allocation, financial planning, inventory management, strategic growth, performance monitoring, risk management, and pricing strategies. The selected dataset includes sales data and correlated information from various companies. Your task is to select one dataset and develop a sales prediction for it. Do the sales prediction in weekly manner (week-wise intervals) to at least 4 weeks (12 weeks good to have).
 
 
-### Store Sales (store_sales.csv)
+### W Store Sales (store_sales.csv)
 
 The data contains sales transactions, customer demographics, and product details.
 
-### X Company Sales (Sales.csv & Features.csv & stores.csv)
+### X Company Sales (sales.csv & features.csv & stores.csv)
 This data contains three files.
 - Sales: The sales data and the time information.
 - Stores: Information about stores.
