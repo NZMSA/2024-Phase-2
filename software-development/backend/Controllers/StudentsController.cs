@@ -88,5 +88,19 @@ namespace backend.Controllers
 
             return NoContent();
         }
+
+        // POST: api/Students/bulk
+        [HttpPost("bulk")]
+        public async Task<ActionResult<IEnumerable<Student>>> BulkCreateStudents(IEnumerable<Student> students)
+        {
+            if (students == null || !students.Any())
+            {
+                return BadRequest("Student data is required.");
+            }
+
+            await _repository.BulkAddStudentsAsync(students);
+
+            return Ok(students);
+        }
     }
 }

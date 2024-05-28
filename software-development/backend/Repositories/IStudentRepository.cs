@@ -10,5 +10,6 @@ namespace Repositories
         Task UpdateStudentAsync(Student student);
         Task DeleteStudentAsync(long id);
         Task<bool> StudentExistsAsync(long id);
+        Task BulkAddStudentsAsync(IEnumerable<Student> students);
     }
 }
