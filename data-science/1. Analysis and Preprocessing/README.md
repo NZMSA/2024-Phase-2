@@ -56,20 +56,20 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
 ### Bonus
 
 If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), then here are some additional tasks you can do on top of the above. 
-    - Perform any aspect of EDA or preprocessing in Power BI.
-        - This would be most suitable for performing data visualisation.
-    - Use the results of your correlation analysis to select the most relevant features or create new ones.
-        - This is not something that was covered in detail in the Microsoft Learn modules, but we recommend searching online for "feature selection" and "feature engineering".
+  - Perform any aspect of EDA or preprocessing in Power BI.
+    - This would be most suitable for performing data visualisation.
+  - Use the results of your correlation analysis to select the most relevant features or create new ones.
+    - This is not something that was covered in detail in the Microsoft Learn modules, but we recommend searching online for "feature selection" and "feature engineering".
 
 ## Submission
 
 To complete this part, please include the following items in your repository:
 
-1. A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen classification dataset
-2. A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen regression dataset
-3. A summary (a Markdown cell in each notebook you create, .txt, .pdf, or in another readable format)
+1. A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen regression dataset
+2. A summary (a Markdown cell in each notebook you create, .txt, .pdf, or in another readable format)
     - Think of this as a TL;DR for your notebooks.
     - While there is no word limit, we may penalise summaries that are more than 500 words long (we have a lot of submissions to get through, so the more concise you can be, the better!), or do not provide a sufficient overview of everything you have done. A key skill to master in data science is your ability to communicate technical concepts in a clear way.
+3. Power BI Screenshots (If you have done the bonus part, please take the screenshots of your visualization and make a note that you have done it in your Jupyter notebook. You can either upload the screenshot together with all other submission files. )
 
 ## Marking Criteria
 
