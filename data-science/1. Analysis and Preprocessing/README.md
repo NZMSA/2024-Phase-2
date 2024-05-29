@@ -18,7 +18,7 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
 
 ### 1. Find all variables and understand them
 
-- Load your chosen datasets from the [datasets folder](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/0.%20Resources/datasets) into your notebook and show the first ten instances.
+- Load your chosen datasets from the [datasets folder](https://github.com/NZMSA/2024-Phase-2/tree/kk-data-2/data-science/0.%20Resources/datasets) into your notebook and show the first ten instances.
 - Show (at minimum) the following without hard-coding the values:
     - Numerically
         - Mean
