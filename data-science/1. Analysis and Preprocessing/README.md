@@ -113,7 +113,7 @@ For each task, we will be making sure that you have met the criteria below.
             ```
     - Visualise data
         - Units 4 to 7 of [Explore and analyze data with Python](https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50)
-        - [All Week 6 modules on Power BI](https://github.com/NZMSA/2024-Phase-1)
+        - [All Week 6 modules on Power BI](https://github.com/NZMSA/2024-Phase-1?tab=readme-ov-file#week-6)
         - ```python
             import matplotlib.pyplot as plt
             ```
