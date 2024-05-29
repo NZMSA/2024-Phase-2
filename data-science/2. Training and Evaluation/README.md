@@ -75,10 +75,10 @@ If you would like to extend yourself (and potentially attain a mark greater than
     - Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters.
     - There are also some other forecasting method that you could create models:
       - Prophet - for more information, please refer to:
-          - https://facebook.github.io/prophet/docs/quick_start.html
-          - https://github.com/facebook/prophet
+          - [Prophet Documentation]https://facebook.github.io/prophet/docs/quick_start.html
+          - [Prophet Code]https://github.com/facebook/prophet
       - ARIMA - for more information, please refer to:
-          - https://otexts.com/fpp3/arima.html 
+          - [Arima]https://otexts.com/fpp3/arima.html 
     - If you decide to do this bonus task, explain what you did and show the performance of each model in your notebook compared to the performance of the model you initially built.
 
 ## Submission
@@ -162,7 +162,7 @@ For each task, we will be making sure that you have met the criteria below.
             ```
 
     - Useful links to study time series forecasting:
-        - https://otexts.com/fpp3/index.html
+        -[Time Series Forecasting] https://otexts.com/fpp3/index.html
 
 - More often than not, data scientists need to go back to their training and evaluation steps after realising they need to train or evaluate their data better or in a different way. So don't be afraid to revisit this part after you think you've completed it, and write about any changes you made to your training and evaluation steps in your summary!
 
