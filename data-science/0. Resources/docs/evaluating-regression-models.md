@@ -10,6 +10,11 @@ We would like you to evaluate your model using the following model evaluation te
     - Calculate and print this value, explaining what it means
 3. MAE
     - Calculate and print this value, explaining what it means
+4. SMAPE
+   - Calculate and print this value, explaining what it means
+5. MAPE
+   - Calculate and print this value, explaining what it means
+    
 
 ## 1. Coefficient of determination ($R^{2}$)
 
@@ -42,3 +47,44 @@ MAE can be calculated as shown below:
 from sklearn.metrics import mean_absolute_error
 mae = mean_absolute_error(y_test, predictions)
 ```
+
+
+## 4. Symmetric mean absolute percentage error (SMAPE or sMAPE)
+
+SMAPE (Symmetric Mean Absolute Percentage Error) is a metric used to measure the accuracy of a forecasting model. It is an accuracy measure based on percentage (or relative) errors. SMAPE provides a symmetric and more balanced view of the forecasting error by considering both the actual and forecasted values in its denominator.It usually defined as:
+
+$$
+\text{SMAPE} = \frac{100\%}{n} \sum_{i=1}^{n} \frac{|F_i - A_i|}{\frac{|A_i| + |F_i|}{2}}
+$$
+
+SMAPE can be calculated as shown below:
+```python
+import numpy as np
+def smape(y_true, y_pred):
+    # Ensure inputs are numpy arrays
+    y_true = np.array(y_true)
+    y_pred = np.array(y_pred)
+    # Calculate the numerator (absolute difference)
+    numerator = np.abs(y_true - y_pred)
+    # Calculate the denominator (average of absolute actual and predicted values)
+    denominator = (np.abs(y_true) + np.abs(y_pred)) / 2
+    # Calculate SMAPE
+    smape_value = np.mean(numerator / denominator) * 100
+    return smape_value
+```
+
+
+## 5. Mean absolute percentage error (MAPE)
+MAPE (Mean Absolute Percentage Error) is a measure used in forecasting to determine the accuracy of a forecasted model. It usually expresses the accuracy as a ratio defined by the formula:
+
+$$
+\text{MAPE} = \frac{100\%}{n} \sum_{i=1}^{n} \left| \frac{A_i - F_i}{A_i} \right|
+$$
+
+MAPE can be calculated as shown below:
+```python
+  mape_value = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+  return mape_value
+```
+
+
