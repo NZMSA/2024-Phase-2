@@ -42,7 +42,7 @@ To help you train and evaluate your models, we have split up training and evalua
 ### 4. Evaluate the model
 
 - Evaluate your trained regression model
-    - Please refer to [Evaluating Regression Models](https://github.com/NZMSA/2023-Phase-2/blob/main/data-science/0.%20Resources/docs/evaluating-regression-models.md)
+    - Please refer to [Evaluating Regression Models](https://github.com/NZMSA/2024-Phase-2/blob/kk-data-2/data-science/0.%20Resources/docs/evaluating-regression-models.md)
     - You have have interpreted your SMAPE, MAPE etc. correctly via comments inside your notebook explaining what your specific metrics mean.
     - You have graphically evaluated the performance of each model by drawing the comparison of the actual sales and predicted sales or otherwise.
 
