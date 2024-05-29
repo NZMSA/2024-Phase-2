@@ -23,6 +23,9 @@ To ensure that our hyperparameter tuning and cross-validation methodology is val
 
 Note that the test set is not and should not be used within the tuning process, it should only be used as a set of data that our models have never been trained on and so assessing our model against the test set after hyperparameter tuning can provide a better measure of our model's generalisability to unseen data than just using a training and test set alone.
 
+- Potential useful link
+    - [Time-series forecasting validation](https://otexts.com/fpp3/tscv.html)
+
 ## Other
 
 While not strictly within the realm of "tuning", for the purposes of Phase 2, there are other ways that you can tune your model such as:
