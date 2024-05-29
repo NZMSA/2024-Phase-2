@@ -70,7 +70,7 @@ def smape(y_true, y_pred):
     denominator = (np.abs(y_true) + np.abs(y_pred)) / 2
     # Calculate SMAPE
     smape_value = np.mean(numerator / denominator) * 100
-    return smape_value
+return smape_value
 ```
 
 
