@@ -54,7 +54,7 @@ mae = mean_absolute_error(y_test, predictions)
 SMAPE (Symmetric Mean Absolute Percentage Error) is a metric used to measure the accuracy of a forecasting model. It is an accuracy measure based on percentage (or relative) errors. SMAPE provides a symmetric and more balanced view of the forecasting error by considering both the actual and forecasted values in its denominator.It usually defined as:
 
 $$
-\text{SMAPE} = \frac{100\%}{n} \sum_{i=1}^{n} \frac{|F_i - A_i|}{\frac{|A_i| + |F_i|}{2}}
+\text{SMAPE} = \frac{100\%}{n} \sum_{i=1}^{n} \frac{|y_{true} - y_{pred}|}{\frac{|y_{pred}| + |y_{true}|}{2}}
 $$
 
 SMAPE can be calculated as shown below:
@@ -78,7 +78,7 @@ return smape_value
 MAPE (Mean Absolute Percentage Error) is a measure used in forecasting to determine the accuracy of a forecasted model. It usually expresses the accuracy as a ratio defined by the formula:
 
 $$
-\text{MAPE} = \frac{100\%}{n} \sum_{i=1}^{n} \left| \frac{A_i - F_i}{A_i} \right|
+\text{MAPE} = \frac{100\%}{n} \sum_{i=1}^{n} \left| \frac{y_{true} - y_{pred}}{y_{true}} \right|
 $$
 
 MAPE can be calculated as shown below:
