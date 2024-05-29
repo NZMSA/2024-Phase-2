@@ -87,4 +87,7 @@ MAPE can be calculated as shown below:
   return mape_value
 ```
 
+## Useful Link
+[Evaluating point forecast accuracy](https://otexts.com/fpp3/accuracy.html)
+
 
