@@ -33,6 +33,9 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
 - Visualise the converted data from the task above and identify any trends, patterns, or anomalies
     - Note that there are many different ways to visualise data, so we recommend that you go through the Microsoft Learn modules to see what kinds of visualisations you have learned about and create those (or something similar) for this task.
     - If any columns of the raw data were already numeric, then you may not have modified them further and have already graphicaly shown them in the task above (in which case skip this task for those columns, as we are only interested in how you visualise the non-numerical columns that you converted in the task above)
+    - Hint: you can choose to aggregate data into daily, weekly, monthly, quarterly and yearly for visualization and analysis purpose.
+          - Some useful time series graphics link: [Time series graphics](https://otexts.com/fpp3/graphics.html)
+
 
 ### 3. Clean data
 
@@ -41,11 +44,14 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
     - outliers by e.g. removing them, standardising/normalising them so that all our feature ranges are similar to each other which helps our model learn better
     - imbalanced data by e.g. undersampling/oversampling for a particular label
     - features by e.g. selecting the most important features to feed into our model while ignoring any insignificant features
+- Some links might be useful:
+    - [Dealing with outliers and missing values](https://otexts.com/fpp3/missing-outliers.html)   
 
 ### 4. Identify correlated variables
 
 - Find correlations between variables within each dataset to figure out how each variable is related to the others.
 - Identify and highlight any apparent relationships between variables.
+  
 
 ### 5. Summary
 
