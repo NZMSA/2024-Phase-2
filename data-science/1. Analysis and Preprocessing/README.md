@@ -45,6 +45,7 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
     - imbalanced data by e.g. undersampling/oversampling for a particular label
     - features by e.g. selecting the most important features to feed into our model while ignoring any insignificant features
 - Some links might be useful:
+    - [Introduction to data for machine learning](https://learn.microsoft.com/en-us/training/modules/introduction-to-data-for-machine-learning/?wt.mc_id=studentamb_319033)
     - [Dealing with outliers and missing values](https://otexts.com/fpp3/missing-outliers.html)   
 
 ### 4. Identify correlated variables
