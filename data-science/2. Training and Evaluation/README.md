@@ -58,7 +58,7 @@ To help you train and evaluate your models, we have split up training and evalua
 
 If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), then here are some additional tasks you can do on top of the above.
 
-- Tune your chosen models in at least one way listed in [Tuning Models](https://github.com/NZMSA/2023-Phase-2/blob/main/data-science/0.%20Resources/docs/tuning-models.md) (choose the way/s that you think are most appropriate for your models)
+- Tune your chosen models in at least one way listed in [Tuning Models](https://github.com/NZMSA/2024-Phase-2/blob/kk-data-2/data-science/0.%20Resources/docs/tuning-models.md) (choose the way/s that you think are most appropriate for your models)
   - If you decide to do this bonus task, quantitatively describe the improvement after tuning using an evaluation metric in your notebook.
 
 - Perform tasks 2-4 on one to two other algorithms for the chosen dataset, compare their performances against each other, and then choose the model with the best performance for task 5. 
