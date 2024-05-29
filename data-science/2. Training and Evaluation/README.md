@@ -45,6 +45,7 @@ To help you train and evaluate your models, we have split up training and evalua
     - Please refer to [Evaluating Regression Models](https://github.com/NZMSA/2024-Phase-2/blob/kk-data-2/data-science/0.%20Resources/docs/evaluating-regression-models.md)
     - You have have interpreted your SMAPE, MAPE etc. correctly via comments inside your notebook explaining what your specific metrics mean.
     - You have graphically evaluated the performance of each model by drawing the comparison of the actual sales and predicted sales or otherwise.
+        - If you choose to forecast 4 week wise period, then draw the actual and predicted period sales amount for comparison. 
 
 ### 5. Summary
 
@@ -72,8 +73,10 @@ If you would like to extend yourself (and potentially attain a mark greater than
             - These MSA workshops:
                 - [Video 1](https://www.youtube.com/watch?v=3Bsl2U-23-k)
                 - [Video 2](https://www.youtube.com/watch?v=6I2kU4Y1tAA)
+            - Or other links:
+                - [Neural network models](https://otexts.com/fpp3/nnetar.html)
     - Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters.
-    - There are also some other forecasting method that you could create models:
+    - There are also some other forecasting method that you could use create models:
       - Prophet - for more information, please refer to:
           - [Prophet Documentation](https://facebook.github.io/prophet/docs/quick_start.html)
           - [Prophet Code](https://github.com/facebook/prophet)
