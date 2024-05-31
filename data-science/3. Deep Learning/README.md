@@ -90,7 +90,7 @@ Classification in deep learning involves training a model to categorize inputs i
 - **Multi-Layer Perceptron (MLP)**: A simple feedforward neural network can be used for basic classification tasks. While not as powerful as CNNs or ViTs for image or text data, MLPs can be effective for smaller datasets or simpler problems.
 - **Convolutional Neural Network (CNN)**: Designed to process data with grid-like topology (e.g. images, video, audio, etc.). CNNs use convolutional layers to extract features from the input data automatically. Examples include AlexNet, VGG, ResNet, EfficientNet, etc.
 - **Vision Transformer (ViT)**: A recent innovation using transformer architecture, initially designed for NLP tasks, but now effectively applied to image classification.
-- **SOTA Models**: YOLO (You Only Look Once), SSD (Single Shot MultiBox Detector), and Mask R-CNN
+- **SOTA Models**: YOLO (You Only Look Once), SSD (Single Shot MultiBox Detector), and Mask R-CNN.
 
 You can choose any model you prefer for the task below; there are no limitations to selecting a model and framework.
 
@@ -125,35 +125,35 @@ To complete this part, please include the following items in your repository:
 
 ### Task Completion
 
-For each task, we will be making sure that you have met the criteria below.
+For each task, we will be making sure that you have met the criteria below:
 
 **Load and split preprocessed data**
 - You have loaded in and split your dataset appropriately
-  - We suggest using a random state of 101 with a train-validation-test split (validation is necessary here)
+  - We suggest using a random state of 101 with a train-validation-test split (validation is necessary here).
 
 **Choose an algorithm**
-- You have chosen an appropriate algorithm for the CIFAR-10 dataset
+- You have chosen an appropriate algorithm for the CIFAR-10 dataset.
 
 **Train and test a model**
-- You have trained and tested your models appropriately
-- You have reported the accuracy of your models on the training and test sets
-- You have printed a simple metric for each model's predictions
+- You have trained and tested your models appropriately.
+- You have reported the accuracy of your models on the training and test sets.
+- You have printed a simple metric for each model's predictions.
 
 **Evaluate the model**
-- You have used evaluation metrics for each model, including (but not limited to) confusion matrix, precision, recall, F1-score, overall accuracy
-- You have interpreted your confusion matrices, F1-scores etc., correctly via comments inside your notebook explaining what your specific metrics mean
-- You have graphically evaluated the performance of each model using ROC curves or otherwise
+- You have used evaluation metrics for each model, including (but not limited to) confusion matrix, precision, recall, F1-score, overall accuracy.
+- You have interpreted your confusion matrices, F1-scores etc., correctly via comments inside your notebook explaining what your specific metrics mean.
+- You have graphically evaluated the performance of each model using ROC curves or otherwise.
 
 **Summary**
-- You have summarised what you have found during training and evaluation
-- You have concisely described the training and evaluation steps you have taken for each of your chosen datasets
-- You have included possible next steps that you could take to improve your models
+- You have summarised what you have found during training and evaluation.
+- You have concisely described the training and evaluation steps you have taken for each of your chosen datasets.
+- You have included possible next steps that you could take to improve your models.
 
 ### Presentation
-- Your notebook/s and the code within them must be well-commented so that someone looking at your notebook/s for the first time can easily understand and follow along with what you did
-  - Note that "well-commented" means that you have provided easily understandable explanations for what the results of your code mean or what you have inferred from them
+- Your notebook/s and the code within them must be well-commented so that someone looking at your notebook/s for the first time can easily understand and follow along with what you did.
+  - Note that "well-commented" means that you have provided easily understandable explanations for what the results of your code mean or what you have inferred from them.
   - We may penalise notebooks that only contain code and nothing else
-- Your comments clearly explain the training and evaluation steps you have taken and justify why you took those steps
+- Your comments clearly explain the training and evaluation steps you have taken and justify why you took those steps.
 
 
 ## Tips

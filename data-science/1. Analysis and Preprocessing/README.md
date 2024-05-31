@@ -39,7 +39,7 @@ To help you analyze and preprocess your datasets, we have split up EDA and data 
 
 Visualise the converted data from the task above and identify any trends, patterns, or anomalies.
 - Note that there are many different ways to visualise data, so we recommend you go through the Microsoft Learn modules to see what kinds of visualisations you have learned about and create those (or something similar) for this task.
-- If any columns of the raw data were already numeric, then you may not have modified them further and have already graphically shown them in the task above (in which case, skip this task for those columns, as we are only interested in how you visualise the non-numerical columns that you converted in the task above)
+- If any columns of the raw data were already numeric, then you may not have modified them further and have already graphically shown them in the task above (in which case, skip this task for those columns, as we are only interested in how you visualise the non-numerical columns that you converted in the task above).
 
 **Hint:** You can choose to aggregate data into daily, weekly, monthly, quarterly and yearly for visualization and analysis purposes. Check this [chapter](https://otexts.com/fpp3/graphics.html) from otexts for more information on visualizing time-series data.
 
@@ -47,10 +47,10 @@ Visualise the converted data from the task above and identify any trends, patter
 ### 3. Clean data
 
 For each dataset, take appropriate steps to handle things like:
-- Missing values by dropping instances with missing values or entire attributes containing missing values, imputing the missing values for a particular attribute
-- Outliers by removing them, standardising/normalising them so that all our feature ranges are similar to each other, which helps our model learn better
-- Imbalanced data by undersampling/oversampling for a particular label
-- Feature selection by selecting the most important features to feed into our model while ignoring any insignificant features
+- Missing values by dropping instances with missing values or entire attributes containing missing values, imputing the missing values for a particular attribute.
+- Outliers by removing them and standardising/normalising them so that all our feature ranges are similar to each other, which helps our model learn better.
+- Imbalanced data by undersampling/oversampling for a particular label.
+- Feature selection by selecting the most important features to feed into our model while ignoring any insignificant features.
   
 Some links that might be useful:
 - [Introduction to data for machine learning](https://learn.microsoft.com/en-us/training/modules/introduction-to-data-for-machine-learning/?wt.mc_id=studentamb_319033)
@@ -83,7 +83,7 @@ To complete this part, please include the following items in your repository:
 2. A summary (using a Markdown cell in each notebook you create, `.txt`, `.pdf`, or in another readable format)
     - Think of this as a TL;DR for your notebooks.
     - While there is no word limit, we may penalise summaries that are more than 500 words long (we have a lot of submissions to get through, so the more concise you can be, the better!) or do not provide a sufficient overview of everything you have done. A key skill to master in data science is your ability to communicate technical concepts clearly and concisely.
-3. Power BI Screenshots (If you have done the bonus part, please take screenshots of your visualization and make a note that you have done it in your Jupyter notebook. You can either upload the screenshot together with all other submission files. )
+3. Power BI Screenshots (if you have done the bonus part, please take screenshots of your visualization and make a note that you have done it in your Jupyter notebook. You can either upload the screenshot together with all other submission files).
 
 ## Marking Criteria
 

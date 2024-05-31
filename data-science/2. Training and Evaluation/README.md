@@ -42,29 +42,29 @@ To help you train and evaluate your models, we have split up training and evalua
 
 ### 1. Load and split preprocessed data
 
-- Write a brief description of each dataset (what features are present within it + their data types, what your target is)
+- Write a brief description of each dataset (what features are present within it + their data types, what your target is).
     - Since notebooks are meant to be easily readable, a person who has no clue what the datasets are might have trouble understanding your notebook.
-- Split your preprocessed datasets into a training set and a test set
+- Split your preprocessed datasets into a training set and a test set.
     - The ultimate goal is to use a subset of the data to train a model that can be used to predict unseen data. This can be done by splitting our dataset into two sets: a training set and a test set. The test set is kept untouched during training so that it can be used to evaluate our trained models and get an estimate of how they would perform with new data in the real world.
 
 ### 2. Choose an algorithm
 
-- Choose an appropriate algorithm for your chosen regression dataset
+- Choose an appropriate algorithm for your chosen regression dataset.
 
-- In your own words, inside your notebook, write a few sentences on how each of your chosen algorithms works
+- In your own words, inside your notebook, write a few sentences on how each of your chosen algorithms works.
     - We suggest that you research and understand the algorithms that you are using (since they all work differently from each other) so that you can better understand what's involved when training and evaluating a model and start to gain an intuition for what models would be the best for certain problems and not others.
 
 ### 3. Train and test a model
 
-- Train a model using your chosen regression algorithm on your chosen regression dataset
-- You have reported the accuracy of your models on the training and test sets
-- You have printed a simple metric for each model's predictions (e.g. `MSE`, `RMSE`, `SMAPE`, `MAPE`, `R^2`, etc.)
+- Train a model using your chosen regression algorithm on your chosen regression dataset.
+- You have reported the accuracy of your models on the training and test sets.
+- You have printed a simple metric for each model's predictions (e.g. `MSE`, `RMSE`, `SMAPE`, `MAPE`, `R^2`, etc.).
 
 
 ### 4. Evaluate the model
 
-- Evaluate your trained regression model
-    - Please refer to [Evaluating Regression Models](https://github.com/NZMSA/2024-Phase-2/blob/kk-data-2/data-science/0.%20Resources/docs/evaluating-regression-models.md)
+- Evaluate your trained regression model.
+    - Please refer to [Evaluating Regression Models](https://github.com/NZMSA/2024-Phase-2/blob/kk-data-2/data-science/0.%20Resources/docs/evaluating-regression-models.md).
     - You have interpreted your `SMAPE`, `MAPE`, etc., correctly via comments inside your notebook explaining what your specific metrics mean.
     - You have graphically evaluated each model's performance by comparing the actual sales and predicted sales or otherwise.
         - If you choose to forecast 4-week periods, draw the actual and predicted period sales amount for comparison. 
@@ -116,31 +116,31 @@ To complete this part, please include the following items in your repository:
 
 1. Task Completion
 
-For each task, we will ensure you have met the criteria below.
+For each task, we will ensure you have met the criteria below:
 
 - Load and split preprocessed data
-    - You have loaded in and split your datasets from Part 1 appropriately
-        - We suggest using a random state of 101 with a 70-30 train-test split (assuming you don't do any tuning as part of the bonus tasks)
+    - You have loaded in and split your datasets from Part 1 appropriately.
+        - We suggest using a random state of 101 with a 70-30 train-test split (assuming you don't do any tuning as part of the bonus tasks).
 - Choose an algorithm
-    - You have chosen an appropriate algorithm for the dataset
+    - You have chosen an appropriate algorithm for the dataset.
 - Train and test a model
-    - You have trained and tested your models appropriately
-    - You have reported the accuracy of your models on the training and test sets
-    - You have printed a simple metric for each model's predictions and/or drawn a graph for your chosen algorithm
+    - You have trained and tested your models appropriately.
+    - You have reported the accuracy of your models on the training and test sets.
+    - You have printed a simple metric for each model's predictions and/or drawn a graph for your chosen algorithm.
 - Evaluate the model
-    - You have used evaluation metrics for each model, including (but not limited to) `SMAPE`, `MAPE`, `R^2`, `MSE`, `RMSE`
-    - You have interpreted your `SMAPE`, `MAPE`, etc., correctly via comments inside your notebook explaining what your specific metrics mean
-    - You have graphically evaluated the performance of each model by drawing the comparison of actual and predicted value or otherwise
+    - You have used evaluation metrics for each model, including (but not limited to) `SMAPE`, `MAPE`, `R^2`, `MSE`, `RMSE`.
+    - You have interpreted your `SMAPE`, `MAPE`, etc., correctly via comments inside your notebook explaining what your specific metrics mean.
+    - You have graphically evaluated the performance of each model by drawing the comparison of actual and predicted value or otherwise.
 - Summary
-    - You have summarised what you have found during training and evaluation
-    - You have concisely described the training and evaluation steps you have taken for each of your chosen datasets
-    - You have included possible next steps that you could take to improve your models
+    - You have summarised what you have found during training and evaluation.
+    - You have concisely described the training and evaluation steps you have taken for each of your chosen datasets.
+    - You have included possible next steps that you could take to improve your models.
 
 2. Presentation
-    - Your notebook/s and the code within them must be well-commented so that someone looking at your notebook/s for the first time can easily understand and follow along with what you did
-        - Note that "well-commented" means that you have provided easily understandable explanations for what the results of your code mean or what you have inferred from them
-        - We may penalise notebooks that only contain code and nothing else
-    - Your comments clearly explain the training and evaluation steps you have taken and justify why you took those steps
+    - Your notebook/s and the code within them must be well-commented so that someone looking at your notebook/s for the first time can easily understand and follow along with what you did.
+        - Note that "well-commented" means that you have provided easily understandable explanations for what the results of your code mean or what you have inferred from them.
+        - We may penalise notebooks that only contain code and nothing else.
+    - Your comments clearly explain the training and evaluation steps you have taken and justify why you took those steps.
 
 ## Tips
 
@@ -154,7 +154,7 @@ For each task, we will ensure you have met the criteria below.
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
             ```
     - Choosing an algorithm
-        - [Scikit-learn models for supervised learning](https://scikit-learn.org/stable/supervised_learning.html): This is to help you decide what model to use for classification and regression (as stated above, we recommend random forest or logistic regression for your chosen classification dataset, and linear regression for your chosen regression dataset)
+        - [Scikit-learn models for supervised learning](https://scikit-learn.org/stable/supervised_learning.html): This is to help you decide what model to use for classification and regression (as stated above, we recommend random forest or logistic regression for your chosen classification dataset, and linear regression for your chosen regression dataset).
         - [No Free Lunch Theorem (NFLT)](https://robertmarks.org/Classes/ENGR5358/Papers/NFL_4_Dummies.pdf): When it comes to data modelling, a beginner's question is always "What is the best ML algorithm to learn?" To this, a beginner must learn the NFLT which states that no one algorithm can achieve the best results in all problems. So, the best approach is to try different ML algorithms, tune them, and compare them against each other for our specific problem. We can have an intuition on what type of model can be used by understanding what type of problem we are dealing with.
         - ```python
             from sklearn.linear_model import LogisticRegression
