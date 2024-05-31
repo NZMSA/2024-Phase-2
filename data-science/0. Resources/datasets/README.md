@@ -1,33 +1,25 @@
 
+# Background
+Sales forecasting is like having a crystal ball for a company’s future! It’s a crucial part of strategic planning, helping businesses decide where to allocate resources, manage finances, keep inventory just right, plan for growth, monitor performance, mitigate risks, and even set prices smartly. You’re about to dive into this exciting world with a dataset packed with sales data and related info from various companies.
 
-# Datasets
+Your mission, should you choose to accept it, is to pick one dataset and develop a model that predicts sales week by week for at least 4 weeks (12 weeks would be awesome!). Think of yourself as a data wizard, conjuring up insights that can shape the future. 🌟
 
-Choose *one* dataset as your chosen regression dataset from the list below.
+## Choose your dataset adventure
 
-You may not use other datasets, as these datasets have been chosen by the MSA team for the following reasons:
-- They are clean enough for anyone to get started with while not being completely unusable due to data quality issues
-- They are small enough for anyone to analyse and run models with on their own devices
-- Keeping the list of datasets small allows us to mark students fairly and compare student's work across submissions to ensure that students are getting the credit they deserve, or implement scaling procedures if needed
-- Keeping the list of datasets small allows you to work within creative constraints and focus on your analysis and modelling skills, as opposed to dealing with issues pertaining to specific datasets or work with datasets you may have already used in the past
+For your dataset, you have two options, but you only need to choose *one*:
 
-Please note:
+### [W Store Sales](W%20store%20sales/) 
+- `store_sales.csv`: Sales transactions, customer demographics, and product details all in one place.
 
-- The details of the scenarios described below are fictional.
-
-
-
-## Regression
-
-Sales forecasting is a critical component of a company's strategic planning. It aids in resource allocation, financial planning, inventory management, strategic growth, performance monitoring, risk management, and pricing strategies. The selected dataset includes sales data and correlated information from various companies. Your task is to select one dataset and develop a sales prediction for it. Do the sales prediction in weekly manner (week-wise intervals) to at least 4 weeks (12 weeks good to have).
+### [X Store Sales](X%20store%20sales/) 
+- `sales.csv`: Sales data and time info – the backbone of your predictions.
+- `features.csv`: Detailed store information to enrich your model.
+- `stores.csv`: Extra store-related info to give your predictions an edge.
 
 
-### W Store Sales (store_sales.csv)
+## A Few Notes Before You Begin:
+- Only use the provided datasets – they’re clean, manageable, and ensure a level playing field for everyone.
+- These datasets are selected to make sure you can focus on honing your analysis and modeling skills without getting bogged down by data quality issues.
+- Using these standardized datasets helps us mark fairly and compare your work across submissions.
 
-The data contains sales transactions, customer demographics, and product details.
-
-### X Company Sales (sales.csv & features.csv & stores.csv)
-This data contains three files.
-- Sales: The sales data and the time information.
-- Stores: Information about stores.
-- Features: Additional information related to the stores.
-
+Remember, all scenarios and details are purely fictional, and any resemblance to real events, places, or people is purely coincidental. Happy forecasting! 🎉📊
