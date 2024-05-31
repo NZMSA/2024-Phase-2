@@ -1,22 +1,44 @@
 # Part 2 - Training and Evaluation
 
-Machine Learning (ML), as the name suggests, is all about teaching a machine *how* to think and not *what* to think. While this topic and others related to big data have been around for decades, it is becoming more popular than ever because the barrier to entry has become lower. This is mainly because everyday computers are now becoming increasingly more capable of the heavy lifting required to do all the maths behind ML. It's good because ML algorithms are now accessible to more people that can solve more problems in the real world and not just in well-funded computer science departments. It’s bad because a lower barrier to entry means that there is a greater risk that more people will not know how the tools they are using actually function and can come to incorrect conclusions about the results that these tools generate.
+As the name suggests, machine Learning (ML) is all about teaching a machine *how* to think and not *what* to think. While this topic and others related to big data have been around for decades, it is becoming more popular than ever because the barrier to entry has become lower. This is mainly because everyday computers are becoming increasingly capable of the heavy lifting required to do all the maths behind ML. 
 
-As such, it is vital that you don't just know what to do, but also know why you’re doing it. Imagine if you were a mechanic and you asked a coworker to give you a tool (e.g. a wrench) to fix a problem that you (and supposedly the worker too) are familiar with - your coworker hands you a Phillips screwdriver, and then they hand you a flathead screwdriver, and then a hammer. At best, this shows a complete lack of understanding of the problem at hand. At worst, it makes solving the problem impossible or even worse, sets you up for a hazardous and harmful operation that could cost both you and your coworker.
+This is good because ML algorithms are now accessible to more people and can solve more real-world problems, not just in well-funded computer science departments. This is also bad because a lower barrier to entry means that there is a greater risk that more people will not know how the tools they are using actually function and can come to incorrect conclusions about the results that these tools generate.
 
-In a similar way, if you are a data scientist and you can't explain how you're training your models but you claim that you've validated the results your models are producing and interpreted your results as if they were correct without question, then the work you do may lead to negative consequences for you, your employer, and the people who will use the results of your models. This is why the need to make sure that you use the right tools is paramount. So now that we've hammered our point (no pun intended), we'll guide you on what to do when training ML models and just as (if not, more) importantly, how to evaluate them.
+<div align="center">
+  <div style="float:left;margin-right:10px;">
+    <img src="https://github.com/NZMSA/2024-Phase-2/assets/67076071/c3e4696b-d5f6-4a7e-862e-d45250578cc4"
+      width=600
+      height=auto
+    >
+  </div>
+  <div style="float:right;">
+    <p><em><a href="https://www.flickr.com/photos/lifeisaprayer/45924389801">A hammer for a screw</a></em></p>
+  </div>
+</div>
 
-There are many categories of machine learning problems (a specific problem's category can be determined by its target variable and data modelling goals), but we are only going to focus on two for this part: classification and regression. As a refresher, the main difference between classification and regression is that classification is about predicting a discrete variable while regression is about predicting a continuous variable.
+
+As such, it is vital that you don't just know what to do but also know why you’re doing it. Imagine if you were a mechanic, and you asked a coworker to give you a tool (e.g. a wrench) to fix a problem that you (and supposedly the worker, too) are familiar with - your coworker hands you a Phillips screwdriver, and then they hand you a flathead screwdriver, and then a hammer. At best, this shows a complete lack of understanding of the problem at hand. At worst, it makes solving the problem impossible or, even worse, sets you up for a hazardous and harmful operation that could cost you and your coworker.
+
+Similarly, if you are a data scientist and you can't explain how you're training your models but you claim that you've validated the results your models are producing and interpreted your results as if they were correct without question, then the work you do may lead to negative consequences for you, your employer, and the people who will use the results of your models. This is why the need to make sure that you use the right tools is paramount. So now that we've hammered our point (no pun intended), we'll guide you on what to do when training ML models and, just as (if not more) importantly, how to evaluate them.
+
+There are many categories of machine learning problems (a specific problem's category can be determined by its target variable and data modelling goals), but we are only going to focus on two for MSA: [classification](../3.%20Deep%20Learning/) in the next section and [regression](../1.%20Analysis%20and%20Preprocessing) which you should be doing now. The main difference between classification and regression is that classification is about predicting a discrete variable, while regression is about predicting a continuous variable.
+
 
 ## Tasks
 
 To help you train and evaluate your models, we have split up training and evaluation into the following tasks to complete. We have provided a `part2-submission.ipynb` notebook to use as a template for these tasks. You may adapt this notebook as you wish and/or create your own.
 
-  1. [Load and split preprocessed data](#1-Load-and-split-preprocessed-data)
-  2. [Choose an algorithm](#2-Choose-an-algorithm)
-  3. [Train and test a model](#3-Train-and-test-a-model)
-  4. [Evaluate the model](#4-Evaluate-the-model)
-  5. [Summary](#5-Summary)
+- [Part 2 - Training and Evaluation](#part-2---training-and-evaluation)
+  - [Tasks](#tasks)
+    - [1. Load and split preprocessed data](#1-load-and-split-preprocessed-data)
+    - [2. Choose an algorithm](#2-choose-an-algorithm)
+    - [3. Train and test a model](#3-train-and-test-a-model)
+    - [4. Evaluate the model](#4-evaluate-the-model)
+    - [5. Summary](#5-summary)
+    - [Bonus](#bonus)
+  - [Submission](#submission)
+  - [Marking Criteria](#marking-criteria)
+  - [Tips](#tips)
 
 ### 1. Load and split preprocessed data
 
@@ -29,43 +51,46 @@ To help you train and evaluate your models, we have split up training and evalua
 
 - Choose an appropriate algorithm for your chosen regression dataset
 
-- In your own words inside your notebook, write a few sentences on how each of your chosen algorithms works
-    - We suggest that you research and understand the algorithms that you are using (since they all work differently from each other) so that you can better understand what's involved when training and evaluating a model, and start to gain an intuition for what models would be the best for certain problems and not others.
+- In your own words, inside your notebook, write a few sentences on how each of your chosen algorithms works
+    - We suggest that you research and understand the algorithms that you are using (since they all work differently from each other) so that you can better understand what's involved when training and evaluating a model and start to gain an intuition for what models would be the best for certain problems and not others.
 
 ### 3. Train and test a model
 
 - Train a model using your chosen regression algorithm on your chosen regression dataset
 - You have reported the accuracy of your models on the training and test sets
-- You have printed a simple metric for each model's predictions (eg. mean squared error (MSE), RMSE, SMAPE, MAPE, R^2 or etc)
+- You have printed a simple metric for each model's predictions (e.g. `MSE`, `RMSE`, `SMAPE`, `MAPE`, `R^2`, etc.)
 
 
 ### 4. Evaluate the model
 
 - Evaluate your trained regression model
     - Please refer to [Evaluating Regression Models](https://github.com/NZMSA/2024-Phase-2/blob/kk-data-2/data-science/0.%20Resources/docs/evaluating-regression-models.md)
-    - You have have interpreted your SMAPE, MAPE etc. correctly via comments inside your notebook explaining what your specific metrics mean.
-    - You have graphically evaluated the performance of each model by drawing the comparison of the actual sales and predicted sales or otherwise.
-        - If you choose to forecast 4 week wise period, then draw the actual and predicted period sales amount for comparison. 
+    - You have interpreted your `SMAPE`, `MAPE`, etc., correctly via comments inside your notebook explaining what your specific metrics mean.
+    - You have graphically evaluated each model's performance by comparing the actual sales and predicted sales or otherwise.
+        - If you choose to forecast 4-week periods, draw the actual and predicted period sales amount for comparison. 
 
 ### 5. Summary
 
 - Write a brief summary that describes:
     - The steps you've taken to train and evaluate your models.
     - The results you've found while training and evaluating your models.
-    - Any interesting things you found during training and evaluation that you'd like to mention in order to showcase the extent of your understanding. We suggest doing things like:
+    - Any interesting things you found during training and evaluation that you'd like to mention to showcase the extent of your understanding. We suggest doing things like:
         - Look up the coefficients of your regression model and briefly mention what these coefficients mean.
 
 ### Bonus
 
-If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), then here are some additional tasks you can do on top of the above.
+If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), here are some additional tasks you can do on top of the above:
 
 - Tune your chosen models in at least one way listed in [Tuning Models](https://github.com/NZMSA/2024-Phase-2/blob/kk-data-2/data-science/0.%20Resources/docs/tuning-models.md) (choose the way/s that you think are most appropriate for your models)
   - If you decide to do this bonus task, quantitatively describe the improvement after tuning using an evaluation metric in your notebook.
 
 - Perform tasks 2-4 on one to two other algorithms for the chosen dataset, compare their performances against each other, and then choose the model with the best performance for task 5. 
-    - There are various other algorithms that you could create other models from that were covered in the Microsoft Learn modules, including:
-        - Decision tree
-        - K-nearest neighbours
+    - There are various other algorithms that you could create other models, including:
+        - Prophet (forecasting) - for more information, please refer to:
+            - [Prophet Documentation](https://facebook.github.io/prophet/docs/quick_start.html)
+            - [Prophet Code](https://github.com/facebook/prophet)
+        - ARIMA (forecasting) - for more information, please refer to:
+            - [Arima](https://otexts.com/fpp3/arima.html) 
         - Lasso regression
         - Gradient boosting
         - Neural network - for more information, please refer to: 
@@ -76,12 +101,6 @@ If you would like to extend yourself (and potentially attain a mark greater than
             - Or other links:
                 - [Neural network models](https://otexts.com/fpp3/nnetar.html)
     - Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters.
-    - There are also some other forecasting method that you could use create models:
-      - Prophet - for more information, please refer to:
-          - [Prophet Documentation](https://facebook.github.io/prophet/docs/quick_start.html)
-          - [Prophet Code](https://github.com/facebook/prophet)
-      - ARIMA - for more information, please refer to:
-          - [Arima](https://otexts.com/fpp3/arima.html) 
     - If you decide to do this bonus task, explain what you did and show the performance of each model in your notebook compared to the performance of the model you initially built.
 
 ## Submission
@@ -97,7 +116,7 @@ To complete this part, please include the following items in your repository:
 
 1. Task Completion
 
-For each task, we will be making sure that you have met the criteria below.
+For each task, we will ensure you have met the criteria below.
 
 - Load and split preprocessed data
     - You have loaded in and split your datasets from Part 1 appropriately
@@ -107,11 +126,11 @@ For each task, we will be making sure that you have met the criteria below.
 - Train and test a model
     - You have trained and tested your models appropriately
     - You have reported the accuracy of your models on the training and test sets
-    - You have printed a simple metric for each model's predictions and/or drawn a graph for you chosen algorithm
+    - You have printed a simple metric for each model's predictions and/or drawn a graph for your chosen algorithm
 - Evaluate the model
-    - You have used evaluation metrics for each model, including (but not limited to) SMAPE, MAPE, R^2, MSE, RMSE
-    - You have have interpreted your SMAPE, MAPE etc. correctly via comments inside your notebook explaining what your specific metrics mean
-    - You have graphically evaluated the performance of each model by drawing the comparison of actual and predict value or otherwise
+    - You have used evaluation metrics for each model, including (but not limited to) `SMAPE`, `MAPE`, `R^2`, `MSE`, `RMSE`
+    - You have interpreted your `SMAPE`, `MAPE`, etc., correctly via comments inside your notebook explaining what your specific metrics mean
+    - You have graphically evaluated the performance of each model by drawing the comparison of actual and predicted value or otherwise
 - Summary
     - You have summarised what you have found during training and evaluation
     - You have concisely described the training and evaluation steps you have taken for each of your chosen datasets
@@ -128,21 +147,21 @@ For each task, we will be making sure that you have met the criteria below.
 - This part relies heavily on the Microsoft Learn modules from Weeks 3 and 4 of Phase 1, so we strongly recommend you go through those while you're completing this part! In particular, we recommend that you go through the following units, modules, code snippets, and external resources for each task to support your work:
     - All tasks
         - [Scikit-Learn Cheat Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
-    - Load and split preprocessed data
+    - Loading and splitting preprocessed data
         - ```python
             from sklearn.model_selection import train_test_split
             # Create an 80-20 train-test split on the dataset
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
             ```
-    - Choose an algorithm
+    - Choosing an algorithm
         - [Scikit-learn models for supervised learning](https://scikit-learn.org/stable/supervised_learning.html): This is to help you decide what model to use for classification and regression (as stated above, we recommend random forest or logistic regression for your chosen classification dataset, and linear regression for your chosen regression dataset)
-        - [No Free Lunch Theorem (NFLT)](https://robertmarks.org/Classes/ENGR5358/Papers/NFL_4_Dummies.pdf): When it comes to data modelling, a beginner's question is always "What is the best ML algorithm to learn?" To this, a beginner must learn the NFLT which states that there is no one algorithm that can achieve the best results in all problems. So the best approach is to try different ML algorithms, tune them, and compare them against each other for our specific problem. We can have an intuition on what type of model can be used by understanding what type of problem we are dealing with.
+        - [No Free Lunch Theorem (NFLT)](https://robertmarks.org/Classes/ENGR5358/Papers/NFL_4_Dummies.pdf): When it comes to data modelling, a beginner's question is always "What is the best ML algorithm to learn?" To this, a beginner must learn the NFLT which states that no one algorithm can achieve the best results in all problems. So, the best approach is to try different ML algorithms, tune them, and compare them against each other for our specific problem. We can have an intuition on what type of model can be used by understanding what type of problem we are dealing with.
         - ```python
             from sklearn.linear_model import LogisticRegression
             # Load an untuned logistic regression model
             model = LogisticRegression()
             ```
-    - Train and test a model
+    - Training and testing a model
         - ```python
             # Train a model using a training set
             model.fit(X_train, y_train)
@@ -156,7 +175,7 @@ For each task, we will be making sure that you have met the criteria below.
             from sklearn.metrics import mean_squared_error
             mse = mean_squared_error(y_test, predictions)
             ```
-    - Evaluate the model
+    - Evaluating the model
         - [Scikit-learn model evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html)
     - Summary
         - ```python
