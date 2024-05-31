@@ -18,7 +18,7 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
 
 ### 1. Find all variables and understand them
 
-- Load your chosen datasets from the [datasets folder](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/0.%20Resources/datasets) into your notebook and show the first ten instances.
+- Load your chosen datasets from the [datasets folder](https://github.com/NZMSA/2024-Phase-2/tree/kk-data-2/data-science/0.%20Resources/datasets) into your notebook and show the first ten instances.
 - Show (at minimum) the following without hard-coding the values:
     - Numerically
         - Mean
@@ -33,6 +33,9 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
 - Visualise the converted data from the task above and identify any trends, patterns, or anomalies
     - Note that there are many different ways to visualise data, so we recommend that you go through the Microsoft Learn modules to see what kinds of visualisations you have learned about and create those (or something similar) for this task.
     - If any columns of the raw data were already numeric, then you may not have modified them further and have already graphicaly shown them in the task above (in which case skip this task for those columns, as we are only interested in how you visualise the non-numerical columns that you converted in the task above)
+    - Hint: you can choose to aggregate data into daily, weekly, monthly, quarterly and yearly for visualization and analysis purpose.
+          - Some useful time series graphics link: [Time series graphics](https://otexts.com/fpp3/graphics.html)
+
 
 ### 3. Clean data
 
@@ -41,11 +44,15 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
     - outliers by e.g. removing them, standardising/normalising them so that all our feature ranges are similar to each other which helps our model learn better
     - imbalanced data by e.g. undersampling/oversampling for a particular label
     - features by e.g. selecting the most important features to feed into our model while ignoring any insignificant features
+- Some links might be useful:
+    - [Introduction to data for machine learning](https://learn.microsoft.com/en-us/training/modules/introduction-to-data-for-machine-learning/?wt.mc_id=studentamb_319033)
+    - [Dealing with outliers and missing values](https://otexts.com/fpp3/missing-outliers.html)   
 
 ### 4. Identify correlated variables
 
 - Find correlations between variables within each dataset to figure out how each variable is related to the others.
 - Identify and highlight any apparent relationships between variables.
+  
 
 ### 5. Summary
 
@@ -56,20 +63,20 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
 ### Bonus
 
 If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), then here are some additional tasks you can do on top of the above. 
-    - Perform any aspect of EDA or preprocessing in Power BI.
-        - This would be most suitable for performing data visualisation.
-    - Use the results of your correlation analysis to select the most relevant features or create new ones.
-        - This is not something that was covered in detail in the Microsoft Learn modules, but we recommend searching online for "feature selection" and "feature engineering".
+  - Perform any aspect of EDA or preprocessing in Power BI.
+    - This would be most suitable for performing data visualisation.
+  - Use the results of your correlation analysis to select the most relevant features or create new ones.
+    - This is not something that was covered in detail in the Microsoft Learn modules, but we recommend searching online for "feature selection" and "feature engineering".
 
 ## Submission
 
 To complete this part, please include the following items in your repository:
 
-1. A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen classification dataset
-2. A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen regression dataset
-3. A summary (a Markdown cell in each notebook you create, .txt, .pdf, or in another readable format)
+1. A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen regression dataset
+2. A summary (a Markdown cell in each notebook you create, .txt, .pdf, or in another readable format)
     - Think of this as a TL;DR for your notebooks.
     - While there is no word limit, we may penalise summaries that are more than 500 words long (we have a lot of submissions to get through, so the more concise you can be, the better!), or do not provide a sufficient overview of everything you have done. A key skill to master in data science is your ability to communicate technical concepts in a clear way.
+3. Power BI Screenshots (If you have done the bonus part, please take the screenshots of your visualization and make a note that you have done it in your Jupyter notebook. You can either upload the screenshot together with all other submission files. )
 
 ## Marking Criteria
 
@@ -113,7 +120,7 @@ For each task, we will be making sure that you have met the criteria below.
             ```
     - Visualise data
         - Units 4 to 7 of [Explore and analyze data with Python](https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50)
-        - [All Week 6 modules on Power BI](https://github.com/NZMSA/2023-Phase-1#data-science-5)
+        - [All Week 6 modules on Power BI](https://github.com/NZMSA/2024-Phase-1?tab=readme-ov-file#week-6)
         - ```python
             import matplotlib.pyplot as plt
             ```
