@@ -43,8 +43,12 @@ Here is an overview of the key directories and files in the project:
 3. Run Project:
   `npm run start`
 
-## Additional steps:
+## Features:
 
-1. Import Excel file. 
+1. Import Excel file.
 
-2. Enjoy!
+2. Toggle light/dark theme in the settings page.
+
+3. Edit the user name.
+
+4. Enjoy!
