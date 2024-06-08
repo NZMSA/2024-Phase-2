@@ -10,6 +10,7 @@ Before running the project, ensure you have the following installed on your mach
 - Node.js (version 14 or higher)
 - npm (Node Package Manager)
 - Run backend project (see backend README to run)
+  Both the frontend and backend must be run simultaneously to ensure the application functions properly.
 
 ## Project Structure
 
@@ -33,17 +34,13 @@ Here is an overview of the key directories and files in the project:
 
 ## Running the project
 
-1. Clone the repository:
-   Open your terminal and run the following command to clone the repository to your local machine:
-   `git clone https://github.com/NZMSA/2024-Phase-2.git`
+1. Navigate to the project directory:
+  `cd frontend`
 
-2. Navigate to the project directory:
-  `cd student-portal`
-
-3. Install dependencies:
+2. Install dependencies:
   `npm install`
 
-4. Run Project:
+3. Run Project:
   `npm run start`
 
 ## Additional steps:
