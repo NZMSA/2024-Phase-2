@@ -27,7 +27,7 @@ Azure SQL is highly beneficial for both Data Science and Software Development st
 - For data scientists, Azure SQL provides a robust platform for the storage, querying, and analysis of large datasets, which is indispensable for developing precise and efficient models. It facilitates seamless data manipulation and retrieval, thereby supporting advanced analytics and machine learning workflows.
 - For software developers, Azure SQL ensures dependable data storage, retrieval, and management, which is critical for constructing scalable and responsive applications. Its integration with other Azure services and tools enhances development efficiency and enables the creation of sophisticated, data-driven applications.
 
-To begin unlocking the powerful capabilities of Azure SQL, please complete the following two modules. This will set you on the path to mastering essential database management skills (these two modules are required to be completed by students in both streams of Phase 2).
+To begin unlocking the powerful capabilities of Azure SQL, please complete the following two modules. This will set you on the path to mastering essential database management skills (these two modules are required to be completed by students in both streams).
  - [Introduction to Azure SQL](https://learn.microsoft.com/training/modules/azure-sql-intro/?wt.mc_id=studentamb_319033)
  - [Deploy and configure servers, instances, and databases for Azure SQL](https://learn.microsoft.com/training/modules/azure-sql-deploy-configure/?wt.mc_id=studentamb_319033)
 
