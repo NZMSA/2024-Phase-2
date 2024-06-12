@@ -1,6 +1,11 @@
-# 2024 Phase 2
+# 2024 MSA-Phase 2
 
-Welcome to Phase 2 of the 2024 MSA programme! This year, Phase 2 will assess your technical skills and consists of the following component:
+Welcome to Phase 2 of the 2024 MSA programme! This year, Phase 2 is designed to comprehensively assess your technical skills through two main components:
+
+1. Azure SQL module
+    - Start learning and understanding Azure SQL to gain essential database management skills. Complete the provided modules to enhance your data handling capabilities in cloud environments.
+
+2. Individual project
 
     - This repository represents the entire technical component of Phase 2, which will assess your technical skills
     - Complete this component individually using Phase 1 knowledge + the resources that the MSA team has provided in the folder for each stream
@@ -8,18 +13,32 @@ Welcome to Phase 2 of the 2024 MSA programme! This year, Phase 2 will assess you
 The expected workload for Phase 2 of each stream is 3-4 hours per week and builds upon the knowledge from Phase 1 of each stream. Furthermore, placements will be either in Software Development or Data Science, not both. As such, we recommend that you follow one stream only in order to manage your time effectively and build your knowledge and skills within one stream as much as you can in order to stand out to employers.
 
 Contents:
-- [Getting Started](https://github.com/NZMSA/2024-Phase-2#getting-started)
+- [Azure SQL module](https://github.com/NZMSA/2024-Phase-2#azure-sql-module)
+- [Project Getting Started](https://github.com/NZMSA/2024-Phase-2#project-getting-started)
 - [Submission](https://github.com/NZMSA/2024-Phase-2#submission)
 - [Support](https://github.com/NZMSA/2024-Phase-2#support)
 - [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2024-Phase-2#microsoft-azure-sign-up-instructions)
 
-## Getting Started
+
+## Azure SQL module
+
+Azure SQL is highly beneficial for both Data Science and Software Development streams due to its advanced database management capabilities, scalability, and performance enhancements.  
+
+- For data scientists, Azure SQL provides a robust platform for the storage, querying, and analysis of large datasets, which is indispensable for developing precise and efficient models. It facilitates seamless data manipulation and retrieval, thereby supporting advanced analytics and machine learning workflows.
+- For software developers, Azure SQL ensures dependable data storage, retrieval, and management, which is critical for constructing scalable and responsive applications. Its integration with other Azure services and tools enhances development efficiency and enables the creation of sophisticated, data-driven applications.
+
+To begin unlocking the powerful capabilities of Azure SQL, please complete the following two modules. This will set you on the path to mastering essential database management skills (These two modules are required to be completed by students in both streams of Phase 2).
+ - [Introduction to Azure SQL](https://learn.microsoft.com/training/modules/azure-sql-intro/?wt.mc_id=studentamb_319033)
+ - [Deploy and configure servers, instances, and databases for Azure SQL](https://learn.microsoft.com/training/modules/azure-sql-deploy-configure/?wt.mc_id=studentamb_319033)
+
+To sign up for an Azure for Students subscription, you can use the [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2024-Phase-2#microsoft-azure-sign-up-instructions) below.
+
+## Project Getting Started
 
 1. Ensure that you:
 - Have completed all the Microsoft Learn modules as listed in the [Schedule from Phase 1](https://github.com/NZMSA/2024-Phase-1#schedule) for your chosen stream
 - Have downloaded all the [key tools from Phase 1](https://github.com/NZMSA/2024-Phase-1#key-tools) for your chosen stream
 - Can access the [Microsoft Learn modules from Phase 1](https://github.com/NZMSA/2024-Phase-1#schedule) to refer to as you complete Phase 2
-- Have signed up for an Azure for Students subscription using the [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2024-Phase-2#microsoft-azure-sign-up-instructions) below (Azure is required to be used by students in both streams of Phase 2)
 
 2. Create a repository inside your personal GitHub account to store all your work and clone that repository into your IDE (ignore any and all other branches, everything you need is in the main branch)
     - In your repository, we recommend that you create a folder for each part of your chosen stream to store your work for each part separately
@@ -33,6 +52,7 @@ Contents:
 
 To complete the technical component of Phase 2 and submit evidence of your completion:
 1. Ensure that you have:
+- Completed the two Azure SQL modules and log in to your Microsoft account and take a full-page screenshot of these two modules.
 - Completed all parts of your chosen stream/s by checking that you have included all items in your repository, as stated in the folder for your chosen stream
     - Software Development
         - [Submission Details](https://github.com/NZMSA/2024-Phase-2/tree/main/software-development#submission)
