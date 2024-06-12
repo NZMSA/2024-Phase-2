@@ -1,8 +1,8 @@
 # MSA 2024 Phase 2   - Software Stream
 Welcome to software stream section.
 
-The assessment brief is located at
-# ***XXXXXX INSERT LINK/LOCATION OF ASSESSMENT BRIEF ***
+The assessment brief is located int the SoftwareAssessment.pdf file.
+[Click here to open it](https://github.com/NZMSA/2024-Phase-2/blob/feat/documentation/software-development/SoftwareAssessment.pdf)
 
 
 ## Getting Started Exemplar
