@@ -52,7 +52,7 @@ To sign up for an Azure for Students subscription, you can use the [Microsoft Az
 
 To complete the technical component of Phase 2 and submit evidence of your completion:
 1. Ensure that you have:
-- Completed the two Azure SQL modules and log in to your Microsoft account and take a full-page screenshot of these two modules.
+- Completed the two Azure SQL modules and log in to your Microsoft account and take a full-page screenshot of these two modules (Similar to phase1)
 - Completed all parts of your chosen stream/s by checking that you have included all items in your repository, as stated in the folder for your chosen stream
     - Software Development
         - [Submission Details](https://github.com/NZMSA/2024-Phase-2/tree/main/software-development#submission)
