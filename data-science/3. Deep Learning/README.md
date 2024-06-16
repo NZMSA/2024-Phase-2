@@ -96,7 +96,7 @@ You can choose any model you prefer for the task below; there are no limitations
 
 
 ## Task
-To complete the second phase's deep learning part, you must participate in our very own [Kaggle Competition](https://www.kaggle.com/c/nzmsa-2024).
+To complete the second phase's deep learning part, you must participate in our very own [Kaggle Competition](https://www.kaggle.com/t/b845e4c163d3c5e73b672b5ee512dca0).
 
 Train your deep learning image classification model with the dataset (CIFAR-10) we provide and submit your prediction on Kaggle! 
 
